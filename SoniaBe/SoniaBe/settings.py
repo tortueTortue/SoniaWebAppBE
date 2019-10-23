@@ -75,6 +75,15 @@ WSGI_APPLICATION = 'SoniaBe.wsgi.application'
 
 CORS_ORIGIN_ALLOW_ALL = True
 
+CORS_ALLOW_METHODS = (
+        'GET',
+        'OPTIONS',
+        'PUT',
+        'POST',
+        'PATCH',
+        'DELETE'
+    )
+
 # Database
 # https://docs.djangoproject.com/en/2.2/ref/settings/#databases
 
