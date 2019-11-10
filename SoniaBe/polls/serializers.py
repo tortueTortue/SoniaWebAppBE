@@ -13,6 +13,6 @@ class ModuleSerializer(serializers.ModelSerializer):
 
 class ModuleNameSerializer(serializers.ModelSerializer):
     class Meta:
-        model = Module
+        model = ModuleName
         fields = '__all__'
 

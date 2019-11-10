@@ -5,6 +5,7 @@ from django.db import models
 
 class ModuleName(models.Model):
     name = models.CharField(max_length=150)
+    icon = models.CharField(default="cellphone-link", max_length=50)
 
 
 class Layout(models.Model):
