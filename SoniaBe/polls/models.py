@@ -24,4 +24,7 @@ class Module(models.Model):
     w = models.IntegerField(default=0)
     isResizable = models.BooleanField(default=True)
     isDraggable = models.BooleanField(default=True)
-    isStatic = models.BooleanField(default=False)
+    isMinimized = models.BooleanField(default=False)
+    static = models.BooleanField(default=False)
+    active = models.BooleanField(default=False)
+
