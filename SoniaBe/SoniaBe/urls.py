@@ -18,7 +18,7 @@ from django.urls import include, path
 from .routers import ROUTER
 
 urlpatterns = [
-    path('polls/', include('polls.urls')),
+    path('module_manager/', include('module_manager.urls')),
     path('admin/', admin.site.urls),
     path('api/', include(ROUTER.urls))
 ]

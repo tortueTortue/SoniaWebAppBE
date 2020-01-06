@@ -1,5 +1,5 @@
 from rest_framework import routers
-from polls.viewsets import *
+from module_manager.viewsets import *
 
 ROUTER = routers.DefaultRouter()
 ROUTER.register(r'layout', LayoutViewSet)

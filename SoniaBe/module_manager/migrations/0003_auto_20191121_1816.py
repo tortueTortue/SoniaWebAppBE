@@ -6,7 +6,7 @@ from django.db import migrations, models
 class Migration(migrations.Migration):
 
     dependencies = [
-        ('polls', '0002_auto_20191017_2155'),
+        ('module_manager', '0002_auto_20191017_2155'),
     ]
 
     operations = [

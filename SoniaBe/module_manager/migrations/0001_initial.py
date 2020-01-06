@@ -23,7 +23,7 @@ class Migration(migrations.Migration):
             name='ModuleList',
             fields=[
                 ('id', models.AutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
-                ('listName', models.ForeignKey(on_delete=django.db.models.deletion.DO_NOTHING, to='polls.ModuleName')),
+                ('listName', models.ForeignKey(on_delete=django.db.models.deletion.DO_NOTHING, to='module_manager.ModuleName')),
             ],
         ),
         migrations.CreateModel(
@@ -37,8 +37,8 @@ class Migration(migrations.Migration):
                 ('isResizable', models.BooleanField(default=True)),
                 ('isDraggable', models.BooleanField(default=True)),
                 ('isStatic', models.BooleanField(default=False)),
-                ('belongsToList', models.ForeignKey(on_delete=django.db.models.deletion.DO_NOTHING, to='polls.ModuleList')),
-                ('name', models.ForeignKey(on_delete=django.db.models.deletion.DO_NOTHING, to='polls.ModuleName')),
+                ('belongsToList', models.ForeignKey(on_delete=django.db.models.deletion.DO_NOTHING, to='module_manager.ModuleList')),
+                ('name', models.ForeignKey(on_delete=django.db.models.deletion.DO_NOTHING, to='module_manager.ModuleName')),
             ],
         ),
         migrations.CreateModel(
@@ -46,7 +46,7 @@ class Migration(migrations.Migration):
             fields=[
                 ('id', models.AutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
                 ('name', models.CharField(max_length=50)),
-                ('modules', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, to='polls.ModuleList')),
+                ('modules', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, to='module_manager.ModuleList')),
             ],
         ),
     ]
