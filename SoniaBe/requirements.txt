@@ -12,7 +12,7 @@ cffi==1.13.1
 constantly==15.1.0
 controller-manager==0.15.1
 controller-manager-msgs==0.15.1
-cryptography==2.8
+cryptography==3.2
 cv-bridge==1.13.0
 diagnostic-analysis==1.9.3
 diagnostic-common-diagnostics==1.9.3
