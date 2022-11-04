@@ -122,7 +122,7 @@ tf2-kdl==0.6.5
 tf2-py==0.6.5
 tf2-ros==0.6.5
 topic-tools==1.14.3
-Twisted==19.7.0
+Twisted==22.10.0
 txaio==18.8.1
 typed-ast==1.4.0
 urdfdom-py==0.4.0
